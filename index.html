@@ -4,11 +4,63 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>10 PUSH-UPS</title>
-    <link href="/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Make sure to update this path -->
   </head>
-  <body class="bg-white m-0 p-0 flex flex-col min-h-screen justify-between">
+  <body
+    class="bg-custom-brown m-0 p-0 flex flex-col min-h-screen justify-between"
+  >
+    <header class="text-white bg-custom-brown body-font shadow w-full">
+      <div
+        class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
+      >
+        <div>
+          <a
+            class="flex title-font font-medium items-center text-white mb-4 md:mb-0"
+          >
+            <img src="/public/logo.webp" alt="logo" class="w-6 h-6" />
+            <!-- Update logo path -->
+            <p>boxer</p>
+          </a>
+        </div>
+
+        <nav
+          class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center"
+        >
+          <a href="#!" class="mr-5 hover:text-sky-400">Home</a>
+          <!-- Update #! with actual link -->
+          <a href="about.html" class="mr-5 hover:text-sky-400">About</a>
+          <!-- More links here -->
+        </nav>
+        <div class="md:hidden">
+          <button id="menuToggle" class="text-white">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Responsive Menu (hidden by default) -->
+      <div class="hidden" id="mobileMenu">
+        <a href="#!" class="block hover:text-sky-400">Home</a>
+        <a href="about.html" class="block hover:text-sky-400">About</a>
+        <!-- More mobile links here -->
+      </div>
+    </header>
+
     <main class="flex flex-1 justify-center items-center w-full">
-      <div class="text-center p-8 bg-custom-brown text-white">
+      <div class="text-center p-4 bg-custom-brown text-white">
         <img
           src="public/pushups-man.jpeg"
           alt="Man doing push-ups"
@@ -17,7 +69,7 @@
         <h2 class="text-custom-peach font-sans text-xl sm:text-2xl mb-4">
           Perform 10 pushups each day!
         </h2>
-        <p class="font-sans text-base sm:text-lg mb-6">
+        <p class="font-sans text-base sm:text-lg mb-6 text-gray-800">
           By committing to this routine, you'll experience increased strength,
           notice enhanced physique in the mirror, and potentially achieve a
           reduction in body fat!
@@ -29,7 +81,7 @@
         </p>
         <a
           href="https://www.youtube.com/watch?v=xnYKFW0WV-k&t=66s"
-          class="inline-block mt-6 bg-custom-peach text-custom-brown font-sans text-xl px-6 py-3 no-underline font-bold tracking-wide"
+          class="inline-block mt-6 bg-custom-peach text-custom-brown font-sans text-xl px-6 py-3 no-underline font-bold tracking-wide hover:text-sky-400"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -38,7 +90,9 @@
       </div>
     </main>
     <footer class="text-center py-4 bg-custom-brown text-white text-xs">
-      © 2024 Andrey TM. All rights reserved.
+      © 2024 <a href="about.html" class="text-white underline">Andrey TM</a>.
+      All rights reserved.
     </footer>
+    <script src="script.js" defer></script>
   </body>
 </html>
